@@ -5,14 +5,16 @@
     android:versionName="1.0" >
 
     <uses-sdk
-        android:minSdkVersion="8"
-        android:targetSdkVersion="19" />
+        android:minSdkVersion="4"
+        android:targetSdkVersion="15" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
     <application
-        android:allowBackup="true"
-        android:icon="@drawable/ic_launcher"
-        android:label="@string/app_name"
-        android:theme="@style/AppTheme" >
+        android:name="ParseApplication"
+        android:icon="@drawable/litr6"
+        android:label="@string/app_name" >
         <activity
             android:name=".SignActivity"
             android:label="@string/app_name" >
@@ -21,6 +23,14 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity android:name=".LoginSignupActivity" >
+        </activity>
+        <activity android:name=".Welcome" >
+        </activity>
+        <activity android:name=".PickUpActivity" >
+        </activity>
+        <activity android:name=".RecyclerActivity" >
         </activity>
     </application>
 
